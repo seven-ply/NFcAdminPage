@@ -1,0 +1,26 @@
+<h1 class="page-header">Game</h1>
+<button class="btn btn-default" ng-click="deleteGame()">New Game</button>
+<h3>{{game.attributes.Name}}</h3>
+
+
+
+<div id="nfcTags">
+    <h3 ng-show="stamps">Gruppe 1</h3>
+    <ul ng-repeat="stamp in stamps">
+        <li>
+            <div class="nfcTag img-rounded">
+                <p>{{stamp.attributes.TagName}}</p>
+                <p>{{stamp.attributes.group}}</p>
+                <p>{{stamp.attributes.user}}</p>
+                <p>{{stamp.createdAt.toString()}}</p>
+                
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="targetReached img-rounded" ng-show="target">
+    <h3 class="page-header">Result:</h3>
+    <p>Gruppe hat alle Tags gesammelt</p>
+    <p>{{target}}s</p>
+    
+</div>

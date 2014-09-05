@@ -1,0 +1,15 @@
+<h1 class="page-header">NFC-Tags</h1>
+<button class="btn btn-default">Add Tag</button>
+<div id="nfcTags">
+    <ul ng-repeat="nfcTag in nfcTags">
+        <li>
+            <div class="nfcTag img-rounded">
+                <h3><i class="fa fa-map-marker"></i> {{nfcTag.attributes.locationName}}</h3>
+                <h4>{{nfcTag.id}}</h4>
+                <p>{{nfcTag.attributes.question}}</p>
+                <p>{{nfcTag.createdAt}}</p>
+            </div>
+        </li>
+    </ul>
+</div>
+

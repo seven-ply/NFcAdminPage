@@ -1,0 +1,21 @@
+#nfcTags ul{
+    list-style:none;
+}
+
+.nfcTag{
+    text-align:center;
+    padding:10px 10px 10px 10px;
+    background-color:#D8D8D8;
+    width:300px;
+    margin-right:20px;
+    margin-top:20px;
+    float:left;
+}
+
+
+
+.targetReached{
+   
+    clear: both;
+    margin-top:220px;
+}
